@@ -1,0 +1,20 @@
+@import 'modules/variables';
+@import 'modules/buttons';
+@import 'modules/products';
+// Importe outros módulos aqui, como _header.scss e _footer.scss
+
+/* Media Queries Globais */
+@media (min-width: 768px) {
+    .products-list {
+        justify-content: space-between;
+    }
+    .product-card {
+        flex-basis: calc(50% - #{$spacing-md} / 2);
+    }
+}
+
+@media (min-width: 992px) {
+    .product-card {
+        flex-basis: calc(25% - #{$spacing-md} * 3 / 4);
+    }
+}
