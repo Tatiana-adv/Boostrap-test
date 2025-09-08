@@ -1,0 +1,17 @@
+@use 'variables' as v;
+
+.btn-find-seller {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: v.$color-primary;
+    color: v.$color-text-light;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken(v.$color-primary, 10%); // Escurece a cor
+    }
+}
