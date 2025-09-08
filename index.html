@@ -1,101 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéBox - Sua Loja de Boxes Pokémon</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <title>Loja Virtual Pokémon - Destined Rivals</title>
+    <link rel="stylesheet" href="./css/main.css"> </head>
 <body>
-
     <header class="main-header">
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.png" alt="PokéBox Logo">
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#" class="btn-primary">Minha Conta</a></li>
-                </ul>
-                <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <nav class="main-nav">
             </nav>
-        </div>
     </header>
 
-    <main>
-        <section class="hero-section">
-            <div class="container hero-content">
-                <h1>Desvende o Poder dos Boxes Pokémon!</h1>
-                <p>As coleções mais raras e emocionantes estão esperando por você. Capture a magia!</p>
-                <a href="#products" class="btn-primary hero-btn">Explorar Boxes</a>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-layout">
-                    <div class="about-image-column">
-                        <img src="./assets/images/about-pokemon-store.jpg" alt="Visão interna da loja PokéBox, com boxes de Pokémon">
-                    </div>
-                    <div class="about-text-column">
-                        <h2>Nossa Jornada Pokémon</h2>
-                        <p>Na PokéBox, somos mais do que uma loja: somos treinadores apaixonados por desvendar o universo Pokémon. Nossa missão é trazer até você as melhores e mais exclusivas coleções de boxes, garantindo a autenticidade e a emoção de cada abertura. Acreditamos que cada box é uma nova aventura, uma chance de encontrar aquele card lendário ou completar sua coleção dos sonhos.</p>
-                        <p>Com um compromisso inabalável com a qualidade e a satisfação dos nossos clientes, selecionamos cuidadosamente cada produto para garantir que sua experiência seja tão grandiosa quanto uma batalha Pokémon épica. Junte-se à nossa comunidade e comece sua próxima jornada de colecionador!</p>
-                    </div>
+    <main class="container">
+        <section class="featured-products-section">
+            <h2 class="section-title">PRODUTOS EM DESTAQUE</h2>
+            <div id="products-container" class="products-list">
                 </div>
-            </div>
         </section>
-
-        <section id="products" class="products-section">
-            <div class="container">
-                <h2>Boxes em Destaque</h2>
-                <div class="product-grid">
-                    
-                    <div class="product-card">
-                        <img src="./assets/images/box-pokemon-1.png" alt="Box Coleção Pokémon: Evoluções do Eevee">
-                        <h3>Coleção VMAX Eeveelutions</h3>
-                        <p class="description">Descubra o poder das evoluções do Eevee com este box exclusivo, recheado de cards V e VMAX!</p>
-                        <button class="btn-add-to-cart" data-product-id="1">Adicionar ao Carrinho</button>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="./assets/images/box-pokemon-2.png" alt="Box Batalha de Baralhos: Charizard vs. Blastoise">
-                        <h3>Batalha de Baralhos Premium</h3>
-                        <p class="description">Reviva a rivalidade clássica entre Charizard e Blastoise com dois baralhos prontos para a batalha!</p>
-                        <button class="btn-add-to-cart" data-product-id="2">Adicionar ao Carrinho</button>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="./assets/images/box-pokemon-3.png" alt="Box Treinador Avançado: Realeza Absoluta">
-                        <h3>Box Treinador Elite: Realeza</h3>
-                        <p class="description">Domine o TCG com este box de treinador repleto de boosters, acessórios e um card promocional!</p>
-                        <button class="btn-add-to-cart" data-product-id="3">Adicionar ao Carrinho</button>
-                    </div>
-
-                    <div class="product-card">
-                        <img src="./assets/images/box-pokemon-4.png" alt="Box Expansão Escarlate e Violeta: Paldea Evolved">
-                        <h3>Expansão Paldea Evolved</h3>
-                        <p class="description">Mergulhe nas novas aventuras de Paldea com os primeiros boxes da série Escarlate e Violeta!</p>
-                        <button class="btn-add-to-cart" data-product-id="4">Adicionar ao Carrinho</button>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
     </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2025 PokéBox. Todos os direitos reservados. Pokémon e Nomes de Personagens são marcas registradas da Nintendo.</p>
-        </div>
-    </footer>
-
-    <script src="./assets/js/main.js"></script>
-</body>
+    
+    <script src="./js/main.js"></script> </body>
 </html>
