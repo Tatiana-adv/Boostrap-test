@@ -1,0 +1,36 @@
+@use 'variables' as v; // Importa as variáveis
+
+.featured-products-section {
+    background-color: v.$color-background;
+    color: v.$color-text-light;
+    padding: v.$spacing-lg v.$spacing-md;
+    text-align: center;
+}
+
+.section-title {
+    font-size: v.$font-size-lg;
+    font-weight: bold;
+    margin-bottom: v.$spacing-lg / 2;
+    letter-spacing: 2px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: v.$spacing-md;
+}
+
+.product-card {
+    background-color: v.$color-text-light;
+    border-radius: v.$border-radius;
+    overflow: hidden;
+    box-shadow: v.$box-shadow-card;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
